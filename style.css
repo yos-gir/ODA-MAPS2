@@ -1,0 +1,301 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+
+body {
+  background-color: #333449;
+}
+
+button{
+  cursor: pointer;
+}
+
+
+nav {
+  display: flex;
+  align-items: center;
+  background-color: #1C1B29;
+  height: 75px;
+}
+
+nav img {
+  height: 50px;
+  margin-left: 20px;
+}
+
+nav h1 {
+  color: white;
+  font-family: Poppins, sans-serif;
+  font-size: 24px;
+  margin-left: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin-left: auto;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: white;
+  /* Add font-family property and specify Poppins as the font name */
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+section {
+  height: calc(100vh - 80px);
+}
+
+section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: no;
+}
+
+.pin {
+  background: #ff0000;
+  position: absolute;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+
+  border-radius: 50% 50% 50% 0;
+  border: 1px solid #fff;
+  /* width: 40px;
+    height: 40px; */
+  transform: rotate(-45deg);
+  display: none;
+}
+
+.pin::after {
+  position: absolute;
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  margin-left: -5px;
+  margin-top: -5px;
+  background-color: #fff;
+}
+
+.pin::before {
+  content: "";
+  background: rgba(255, 0, 0, 0);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  animation:
+    pulse 1.3s ease-in-out infinite;
+
+}
+
+.pin span {
+  display: inline-block;
+  white-space: nowrap;
+  position: absolute;
+  left: 0.5em;
+  top: 175%;
+  margin-left: 25%;
+  transform: translateY(-50%);
+  background: white;
+  border-radius: 3em;
+  padding: 0.1em 0.4em;
+  font-size: 0.9em;
+  transform: rotate(45deg);
+
+
+}
+
+.maingate {
+  bottom: 18%;
+  left: 46%;
+  display: block;
+}
+
+.office {
+  bottom: 30%;
+  left: 46%;
+  display: block;
+}
+
+.Cafe {
+  bottom: 60%;
+  left: 50%;
+  display: block;
+}
+
+.g11female {
+  bottom: 50%;
+  left: 65%;
+  display: block;
+}
+
+.g12female {
+  bottom: 45%;
+  left: 71%;
+  display: block;
+}
+
+.clinic {
+  bottom: 10%;
+  left: 55%;
+  display: block;
+}
+
+.hall {
+  bottom: 30%;
+  left: 26%;
+  display: block;
+}
+
+.laounge {
+  bottom: 40%;
+  left: 32%;
+  display: block;
+}
+
+.dormblock25 {
+  bottom: 52%;
+  left: 32%;
+  display: block;
+}
+
+.dormblock23 {
+  bottom: 65%;
+  left: 24%;
+  display: block;
+}
+
+.g12male {
+  bottom: 50%;
+  left: 23%;
+  display: block;
+}
+
+.smalllibrary {
+  bottom: 30%;
+  left: 65%;
+  display: block;
+}
+
+.sportfield {
+  bottom: 20%;
+  left: 78%;
+  display: block;
+}
+
+.classroom {
+  bottom: 20%;
+  left: 64%;
+  display: block;
+}
+
+.shop {
+  bottom: 7%;
+  left: 48%;
+  display: block;
+}
+
+
+/* ----------------------------------------------------------------- */
+
+.modal {
+  display: block;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 100;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.modal-content {
+  background: #1C1B29;
+  width: 85%;
+  height: 95%;
+  border-radius: 0.5rem;
+  border: none;
+  color: white;
+
+}
+
+.modal .image_wraper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 90%;
+}
+
+.cont {
+
+  height: 70%;
+  position: fixed;
+  width: 70%;
+  border-radius: 0.5rem;
+}
+canvas{
+  border-radius: 0.5rem;
+}
+
+.stylemenow{
+  height: 110%;
+  width: 110%;
+}
+
+
+/* ------------------------------------------------------------ */
